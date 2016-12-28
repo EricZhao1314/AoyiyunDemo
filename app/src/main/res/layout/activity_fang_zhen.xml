@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_fang_zhen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jidian_bg"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/jidian_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fangzhen_name_text_title"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#fff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shuaxin"
+            android:id="@+id/fangzhen_shuaxin"/>
+    </RelativeLayout>
+    <com.astuetz.PagerSlidingTabStrip
+        app:pstsShouldExpand="true"
+        android:id="@+id/tab_fangzhen"
+        android:layout_width="match_parent"
+        app:pstsIndicatorColor="#fff"
+        app:pstsIndicatorHeight="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.astuetz.PagerSlidingTabStrip>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_fangzhen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
